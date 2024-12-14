@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../App.css"; // Import the CSS file for styles
-
+import "./cs.module.css";
 const ChristmasCountdown = () => {
   const calculateTimeLeft = () => {
     const christmasDate = new Date("December 29, 2024 00:00:00").getTime();
