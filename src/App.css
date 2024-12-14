@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  background-color: #0f0f0f;  /* Light gray background for a minimalistic look */
+  font-family: 'Roboto', sans-serif;  /* Clean and modern font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;  /* Dark gray for text */
+}
+
+h1 {
+  color: #e95651;  /* Muted red for the Christmas theme */
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 15px;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.countdown-timer span {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  border: 1px solid #ddd;  /* Light border to give structure */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.countdown-timer span:hover {
+  background-color: #c0392b;  /* Hover effect with muted red */
+  color: #fff;  /* White text on hover */
+  transform: scale(1.1);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  color: #888;  /* Subtle gray footer text */
+}
+
+/* Subtle glow animation for Christmas feel */
+@keyframes subtle-glow {
+  0% {
+    text-shadow: 0 0 5px #df321f, 0 0 15px #c0392b;
+  }
+  50% {
+    text-shadow: 0 0 15px #df321f, 0 0 30px #c0392b;
+  }
+  100% {
+    text-shadow: 0 0 5px #df321f, 0 0 15px #c0392b;
+  }
+}
+
+.glowing {
+  animation: subtle-glow 1.5s infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;  /* Smaller font size for smaller screens */
+  }
+
+  .countdown-timer {
+    flex-direction: column;  /* Stack the countdown values vertically */
+    gap: 10px;
+    font-size: 1.8rem;  /* Smaller font size for countdown */
+  }
+
+  .countdown-timer span {
+    padding: 8px 12px;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.9rem;  /* Smaller footer text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;  /* Further reduce font size for very small screens */
+  }
+
+  .countdown-timer {
+    font-size: 1.5rem;  /* Even smaller countdown font size */
+    gap: 8px;  /* Smaller gap between countdown values */
+  }
+
+  .countdown-timer span {
+    padding: 6px 10px;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;  /* Even smaller footer text */
+  }
+}
