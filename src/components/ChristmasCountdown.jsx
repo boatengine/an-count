@@ -55,7 +55,7 @@ const ChristmasCountdown = () => {
         </div>
       </div>
       <footer>
-        <p>Counting down to Anniversary 1 year 5 months! 🎄 now</p>
+        <p> Anniversary 1 year 5 months 🎄 </p>
       </footer>
     </div>
   );
