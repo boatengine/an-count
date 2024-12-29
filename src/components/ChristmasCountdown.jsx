@@ -7,7 +7,7 @@ const ChristmasCountdown = () => {
   const navigate = useNavigate();
 
   const calculateTimeLeft = () => {
-    const christmasDate = new Date("December 29, 2024 13:35:00").getTime();
+    const christmasDate = new Date("December 29, 2024 20:20:20").getTime();
     const currentDate = new Date().getTime();
     const difference = christmasDate - currentDate;
 
