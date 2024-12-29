@@ -1,10 +1,20 @@
+// ChristmasCountdown.js
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css"; // Import the CSS file for styles
+
 const ChristmasCountdown = () => {
+  const navigate = useNavigate();
+
   const calculateTimeLeft = () => {
-    const christmasDate = new Date("December 29, 2024 00:00:00").getTime();
+    const christmasDate = new Date("December 29, 2024 13:35:00").getTime();
     const currentDate = new Date().getTime();
     const difference = christmasDate - currentDate;
+
+    if (difference <= 0) {
+      navigate("/aniversary");
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
 
     let timeLeft = {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -45,7 +55,7 @@ const ChristmasCountdown = () => {
         </div>
       </div>
       <footer>
-        <p>Counting down to Anniversary 1 yar 5 month ! 🎄 now</p>
+        <p>Counting down to Anniversary 1 year 5 months! 🎄 now</p>
       </footer>
     </div>
   );

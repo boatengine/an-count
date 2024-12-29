@@ -37,10 +37,40 @@ h1 {
 }
 
 .countdown-timer span:hover {
-  background-color: #c0392b;  /* Hover effect with muted red */
+  background-color: rgb(192, 57, 43);  /* Hover effect with muted red */
   color: #fff;  /* White text on hover */
   transform: scale(1.1);
 }
+
+.balloon-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 60px;
+  background-color: rgba(255, 100, 100, 0.8);
+  border-radius: 50%;
+  animation: float 5s infinite ease-in;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
 
 footer {
   position: absolute;
@@ -50,6 +80,27 @@ footer {
   text-align: center;
   color: #888;  /* Subtle gray footer text */
 }
+
+
+.card {
+  background-color: rgba(96, 29, 21, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  color: white;
+}
+
+.para {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button {
+}
+
 
 /* Subtle glow animation for Christmas feel */
 @keyframes subtle-glow {
@@ -109,3 +160,5 @@ footer {
     font-size: 0.8rem;  /* Even smaller footer text */
   }
 }
+
+
