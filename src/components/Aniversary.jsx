@@ -32,7 +32,7 @@ const Aniversary = () => {
         }}
       >
         <button className="button" onClick={() => setShowCard(!showCard)}>
-          {showCard ? "ซ่อนข้อความ" : "แสดงข้อความ"}
+          {showCard ? "ซ่อนข้อความ" : "จิ่มเลยหมูเด้ง!!"}
         </button>
       </div>
       {showCard && (

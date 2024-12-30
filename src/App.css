@@ -98,7 +98,35 @@ footer {
   font-weight: bold;
 }
 
+
+
 .button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #fa3932;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 
@@ -107,7 +135,7 @@ footer {
   0% {
     text-shadow: 0 0 5px #df321f, 0 0 15px #c0392b;
   }
-  50% {
+  50% {`
     text-shadow: 0 0 15px #df321f, 0 0 30px #c0392b;
   }
   100% {
